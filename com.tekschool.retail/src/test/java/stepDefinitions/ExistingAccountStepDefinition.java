@@ -18,6 +18,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_click_on_MyAccount() throws Throwable {
 		existingAccountObj.clickOnMyAccount();
 		logger.info("User click on MyAccount");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -25,6 +26,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_clicked_on_Login() throws Throwable {
 		existingAccountObj.clickOnLogin();
 		logger.info("User clicked on Login");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -32,12 +34,14 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_enter_on_emailaddress_qadari_2015_gmail_com_and_password_Asdfg(int arg1) throws Throwable {
 		existingAccountObj.enterEmail();
 		existingAccountObj.enterPassword();
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
 	@When("^User click on Login Btn$")
 	public void user_click_on_Login_Btn() throws Throwable {
 		existingAccountObj.clickOnLoginBtn();
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 
 	}
@@ -47,6 +51,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_click_on_Register_for_an_Affiliate_Account_link() throws Throwable {
 		existingAccountObj.RegisterForAnAffiliateAccount();
 		logger.info("User click on ‘Register for an Affiliate Account");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -59,6 +64,7 @@ public class ExistingAccountStepDefinition extends Base {
 		existingAccountObj.enterChequePayeeName(dataValues.get(0).get("Cheque Payee Name"));
 
 		logger.info("User fill affiliate form with below information");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 
 	}
@@ -67,6 +73,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_check_on_About_us_check_box() throws Throwable {
 		existingAccountObj.AboutUsCheckBox();
 		logger.info("User Check On About Us Check Box");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -74,6 +81,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_should_see_a_success_message() throws Throwable {
 		existingAccountObj.SuccessMessage();
 		logger.info("User should see a success message");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 
 	}
@@ -82,6 +90,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_click_on_Edit_your_affiliate_informationlink() throws Throwable {
 		existingAccountObj.EditYourAffiliateInformation();
 		logger.info("click on Edit your affiliate informationlink");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -89,6 +98,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_click_on_Bank_Transfer_radio_button() throws Throwable {
 		existingAccountObj.BankTransferBtn();
 		logger.info("click on Bank Transfer radio button");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -108,6 +118,7 @@ public class ExistingAccountStepDefinition extends Base {
 		
 
 		logger.info("User fill Bank information with below information");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 		
 	}
@@ -118,7 +129,9 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_click_on_Edit_your_account_information_link() throws Throwable {
 		existingAccountObj.EditYourAccountInformation();
 		logger.info("Edit your account information");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
+		
 	}
 	
 	@When("^User modify below information$")
@@ -130,13 +143,16 @@ public class ExistingAccountStepDefinition extends Base {
 		existingAccountObj.enterValueToTelephoneNumber(dataValues.get(0).get("TelephoneNumber"));
 
 		logger.info("User modify below information");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
+		
 	}
 
 	@When("^User click on continue button$")
 	public void user_click_on_continue_button() throws Throwable {
 		existingAccountObj.Continue();
 		logger.info("click on continue button");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -144,6 +160,7 @@ public class ExistingAccountStepDefinition extends Base {
 	public void user_should_see_a_message_Success_Your_account_has_been_successfully_updated() throws Throwable {
 		existingAccountObj.YourAccountHasBeenSuccessfullyUpdated();
 		logger.info("Success: Your account has been successfully updated");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 }

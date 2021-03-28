@@ -5,7 +5,7 @@ import cucumber.api.java.en.When;
 import pageObjects.DesktopPageObj;
 import utilities.WebDriverUtility;
 
-public class RetailPageDesktopDefinitions extends Base {
+public class DesktopDefinitions extends Base {
 
 	DesktopPageObj desktoppageobj = new DesktopPageObj();
 
@@ -13,6 +13,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_Desktops_tab() throws Throwable {
 		desktoppageobj.clickOnDesktop();
 		logger.info("User click on Desktops tab");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -20,6 +21,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_Show_all_desktops() throws Throwable {
 		desktoppageobj.clickOnShowAllDesktop();
 		logger.info("User click on Show all desktops");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -33,6 +35,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_HP_LP_item(int arg1) throws Throwable {
 		desktoppageobj.clickonHp();
 		logger.info("User click on ‘HP LP");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -40,6 +43,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_add_to_Cart_button() throws Throwable {
 		desktoppageobj.addToCartBtn();
 		logger.info("User click add to Cart button");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -48,6 +52,7 @@ public class RetailPageDesktopDefinitions extends Base {
 			throws Throwable {
 		desktoppageobj.messageDisplaySuccess();
 		logger.info("User should see a message ‘Success: you have added HP LP ");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -57,6 +62,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_ADD_TO_CART_option_on_Canon_EOS_D_item(int arg1) throws Throwable {
 		desktoppageobj.addToCart();
 		logger.info("User click ADD TO CART option on ‘Canon EOS");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -64,6 +70,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_select_color_from_dropdown_Red() throws Throwable {
 		desktoppageobj.selectColor();
 		logger.info("User select color from dropdown ‘Red’");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -71,6 +78,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_select_quantity(int arg1) throws Throwable {
 		desktoppageobj.selectQuantity1();
 		logger.info("User select quantity");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -79,6 +87,7 @@ public class RetailPageDesktopDefinitions extends Base {
 			throws Throwable {
 		desktoppageobj.messageDisplaySuccess();
 		logger.info("User should see a message ‘Success: You have added Canon EOS (\\\\d+)D to your shopping cart");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -88,6 +97,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_Canon_EOS_D_item(int arg1) throws Throwable {
 		desktoppageobj.clickCanon();
 		logger.info("User click on Canon EOS");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -95,6 +105,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_write_a_review_link() throws Throwable {
 		desktoppageobj.clickReviewLink();
 		logger.info("User click on write a review link");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 		
 	}
@@ -103,13 +114,15 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_enter_yourname_name(String Habibi) throws Throwable {
 		desktoppageobj.enterValueToName(Habibi);
 		logger.info("User enter yourname");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
 	@When("^User enter yourReview '(.+)'")
-	public void user_enter_yourReview_Sucsess(String ILoveTecSchoolProducts) throws Throwable {
-		desktoppageobj.enterValueToReview(ILoveTecSchoolProducts);
+	public void user_enter_yourReview_Sucsess(String Habibi) throws Throwable {
+		desktoppageobj.enterValueToReview(Habibi);
 		logger.info("User enter yourReview");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 	
@@ -118,6 +131,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_Bad_or_Good_Button() throws Throwable {
 		desktoppageobj.clickBadorGood();
 		logger.info("User click on Bad or Good Button");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	
 	}
@@ -126,6 +140,7 @@ public class RetailPageDesktopDefinitions extends Base {
 	public void user_click_on_Continue_Button() throws Throwable {
 		desktoppageobj.clicContinue();
 		logger.info("User click on Continue Button");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
@@ -134,6 +149,7 @@ public class RetailPageDesktopDefinitions extends Base {
 			throws Throwable {
 		desktoppageobj.reviewMessage();
 		logger.info("User should see a message with Thank you for your review\\\\. It has been submitted to the webmaster for approval");
+		WebDriverUtility.wait(3000);
 		WebDriverUtility.screenShot();
 	}
 
